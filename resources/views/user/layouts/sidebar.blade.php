@@ -33,7 +33,7 @@
         </a>
     </li>
 
-    <!-- Reviews -->
+    {{-- <!-- Reviews -->
     <li class="nav-item">
         <a class="nav-link" href="{{route('user.productreview.index')}}">
             <i class="fas fa-comments"></i>
@@ -54,7 +54,7 @@
           <i class="fas fa-comments fa-chart-area"></i>
           <span>Comments</span>
       </a>
-    </li>
+    </li> --}}
     <!-- Sidebar Toggler (Sidebar) -->
     <div class="text-center d-none d-md-inline">
       <button class="rounded-circle border-0" id="sidebarToggle"></button>

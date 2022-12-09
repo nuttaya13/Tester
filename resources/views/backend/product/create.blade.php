@@ -59,7 +59,7 @@
         </div>
 
         <div class="form-group">
-          <label for="price" class="col-form-label">Price(NRS) <span class="text-danger">*</span></label>
+          <label for="price" class="col-form-label">Price(BTH) <span class="text-danger">*</span></label>
           <input id="price" type="number" name="price" placeholder="Enter price"  value="{{old('price')}}" class="form-control">
           @error('price')
           <span class="text-danger">{{$message}}</span>
@@ -73,28 +73,7 @@
           <span class="text-danger">{{$message}}</span>
           @enderror
         </div>
-        <div class="form-group">
-          <label for="size">Size</label>
-          <select name="size[]" class="form-control selectpicker"  multiple data-live-search="true">
-              <option value="">--Select any size--</option>
-              <option value="S">Small (S)</option>
-              <option value="M">Medium (M)</option>
-              <option value="L">Large (L)</option>
-              <option value="XL">Extra Large (XL)</option>
-          </select>
-        </div>
-
-        <div class="form-group">
-          <label for="brand_id">Brand</label>
-          {{-- {{$brands}} --}}
-
-          <select name="brand_id" class="form-control">
-              <option value="">--Select Brand--</option>
-             @foreach($brands as $brand)
-              <option value="{{$brand->id}}">{{$brand->title}}</option>
-             @endforeach
-          </select>
-        </div>
+  
 
         <div class="form-group">
           <label for="condition">Condition</label>

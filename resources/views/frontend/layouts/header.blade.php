@@ -88,7 +88,7 @@
                                             class="@if(Request::path()=='product-grids'||Request::path()=='product-lists')  active  @endif">
                                             <a href="{{route('product-grids')}}">Products</a></li>
                                         <li class="{{Request::path()=='contact' ? 'active' : ''}}"><a
-                                                href="{{route('contact')}}">Contact Us</a></li>
+                                                href="{{route('contact')}}">Payment</a></li>
                                     <div class="sinlge-bar shopping">
                                         <a href="{{route('cart')}}" class="single-icon"><i
                                                 class="ti-shopping-cart-full"></i> <span
