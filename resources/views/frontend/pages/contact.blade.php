@@ -26,7 +26,7 @@
             <p>ระบบแจ้งยืนยันการชำระเงิน เป็นระบบที่สร้างขึ้นเพื่ออำนวยความสะดวกลูกค้า ในกรณีที่ไม่สามารถส่งแฟกซ์หรือสแกนสลิปส่งทางอีเมลได้ 
 				การแจ้งชำระเงินออนไลน์ จะช่วยให้เจ้าหน้าที่ของเรา ทราบถึงการชำระเงินของลูกค้า และสามารถตรวจสอบข้อมูล ได้จากรายละเอียดที่ลูกค้าแจ้งให้ 
 				ซึ่งจะเป็นการประหยัดเวลา และลดขั้นตอนความยุ่งยากได้</p>
-            <form class="row tracking_form my-4" action="{{route('product.track.order')}}" method="post" novalidate="novalidate">
+            <form class="row tracking_form my-4" action="{{route('#')}}" method="post" novalidate="novalidate">
               @csrf
                 <div class="col-md-8 form-group">
 					<label>ชื่อ<span>*</span></label>
