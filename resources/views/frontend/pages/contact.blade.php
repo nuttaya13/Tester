@@ -37,7 +37,7 @@
                     <div class="col-md-8 form-group">
                         <label>ชื่อ<span>*</span></label>
                         <input type="text" class="form-control p-2 {{ $errors->has('name') ? 'is-invalid' : '' }}"
-                            name="name" placeholder="Enter your order number" value="{{ old('name', null) }}">
+                            name="name" placeholder="" value="{{ old('name', null) }}">
                         @if ($errors->has('name'))
                             <div class="invalid-feedback">
                                 {!! $errors->first('name') !!}
@@ -48,7 +48,7 @@
                     <div class="col-md-8 form-group">
                         <label>จำนวนโอน<span>*</span></label>
                         <input type="text" class="form-control p-2 {{ $errors->has('payment') ? 'is-invalid' : '' }}"
-                            name="payment" placeholder="Enter your order number" value="{{ old('payment', null) }}">
+                            name="payment" placeholder="" value="{{ old('payment', null) }}">
                         <div class="invalid-feedback">
                             {!! $errors->first('payment') !!}
                         </div>
@@ -56,7 +56,7 @@
                     <div class="col-md-8 form-group">
                         <label>หลักฐานการชำระเงิน<span>*</span></label>
                         <input type="file" class="form-control p-2 {{ $errors->has('file') ? 'is-invalid' : '' }}"
-                            name="file" placeholder="Enter your order number">
+                            name="file">
                         <div class="invalid-feedback">
                             {!! $errors->first('file') !!}
                         </div>
