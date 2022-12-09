@@ -17,6 +17,7 @@ Auth::routes(['register'=>false]);
 
 Route::get('file','FileController@index');
 Route::post('file','FileController@store')->name('file.store');
+Route::get('file/{file}','FileController@show')->name('file.show');
 
 Route::get('user/login','FrontendController@login')->name('login.form');
 Route::post('user/login','FrontendController@loginSubmit')->name('login.submit');
