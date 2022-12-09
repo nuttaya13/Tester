@@ -370,6 +370,7 @@
         font-weight: bold;
         line-height: 100%;
         color: #ffffff;
+        text-align: right;
         }
 
         #Gslider .carousel-inner .carousel-caption p {
