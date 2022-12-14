@@ -1,4 +1,4 @@
-@extends('frontend.layouts.master')
+ @extends('frontend.layouts.master')
 
 @section('title','E-Shop || Login Page')
 
@@ -105,4 +105,4 @@
         background:rgb(243, 26, 26) !important;
     }
 </style>
-@endpush
+@endpush 

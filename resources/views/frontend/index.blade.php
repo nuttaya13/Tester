@@ -164,7 +164,6 @@
                                             <div class="button-head">
                                                 <div class="product-action">
                                                     <a data-toggle="modal" data-target="#{{$product->id}}" title="Quick View" href="#"><i class=" ti-eye"></i><span>Quick Shop</span></a>
-                                                    <a title="Wishlist" href="{{route('add-to-wishlist',$product->slug)}}" ><i class=" ti-heart "></i><span>Add to Wishlist</span></a>
                                                 </div>
                                                 <div class="product-action-2">
                                                     <a title="Add to cart" href="{{route('add-to-cart',$product->slug)}}">Add to cart</a>
@@ -200,9 +199,6 @@
 {{-- @php
     $featured=DB::table('products')->where('is_featured',1)->where('status','active')->orderBy('id','DESC')->limit(1)->get();
 @endphp --}}
-
-
-{{-- @include('frontend.layouts.newsletter') --}}
 
 <!-- Modal -->
 @if($product_lists)
